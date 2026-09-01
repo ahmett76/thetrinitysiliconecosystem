@@ -1,14 +1,14 @@
-!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>The Silicon Suite | Premium Domains</title>
-  <meta name="description" content="SiliconOptima • SiliconOmni • SiliconFold — Premium domain suite for next-gen compute, intelligence and molecular AI.">
+  <meta name="description" content="SiliconOptima • SiliconOmni • SiliconFold — Premium domain suite for next-gen compute, intelligence and molecular AI." />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Orbitron:wght@500;600;700&display=swap" rel="stylesheet" />
 
   <style>
     :root {
@@ -23,7 +23,11 @@
       --border: rgba(0, 229, 199, 0.18);
     }
 
-    * { margin: 0; padding: 0; box-sizing: border-box; }
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
 
     body {
       font-family: 'Inter', system-ui, sans-serif;
@@ -102,7 +106,10 @@
       margin: 0 auto 40px;
     }
 
-    .tagline strong { color: var(--text); font-weight: 500; }
+    .tagline strong {
+      color: var(--text);
+      font-weight: 500;
+    }
 
     .hero-cta {
       display: flex;
@@ -121,6 +128,8 @@
       font-size: 0.95rem;
       text-decoration: none;
       transition: all 0.25s ease;
+      border: none;
+      cursor: pointer;
     }
 
     .btn-primary {
@@ -152,7 +161,9 @@
     }
 
     /* SECTIONS */
-    section { padding: 90px 0; }
+    section {
+      padding: 90px 0;
+    }
 
     .section-title {
       font-family: 'Orbitron', sans-serif;
@@ -184,6 +195,7 @@
       transition: all 0.3s ease;
       display: flex;
       flex-direction: column;
+      align-items: flex-start;
     }
 
     .domain-card:hover {
@@ -192,21 +204,31 @@
       box-shadow: 0 20px 40px rgba(0, 0, 0, 0.4);
     }
 
+    .domain-logo {
+      width: 100%;
+      max-width: 220px;
+      height: auto;
+      margin-bottom: 18px;
+      display: block;
+    }
+
     .domain-number {
       font-size: 13px;
       font-weight: 600;
       color: var(--turquoise);
       letter-spacing: 1px;
-      margin-bottom: 16px;
+      margin-bottom: 12px;
     }
 
     .domain-name {
       font-family: 'Orbitron', sans-serif;
-      font-size: 1.35rem;
-      margin-bottom: 8px;
+      font-size: 1.2rem;
+      margin-bottom: 6px;
     }
 
-    .domain-name span { color: var(--turquoise); }
+    .domain-name span {
+      color: var(--turquoise);
+    }
 
     .domain-tagline {
       color: var(--yellow);
@@ -239,19 +261,47 @@
       display: flex;
       gap: 10px;
       flex-wrap: wrap;
+      width: 100%;
     }
 
     .btn-sedo {
       background: linear-gradient(135deg, #3b82f6, #2563eb);
       color: white;
+      padding: 11px 18px;
+      font-size: 0.86rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      cursor: pointer;
+      flex: 1;
+      justify-content: center;
     }
 
     .btn-afternic {
       background: linear-gradient(135deg, #fbbf24, #f59e0b);
       color: #1a1200;
+      padding: 11px 18px;
+      font-size: 0.86rem;
+      border-radius: 10px;
+      text-decoration: none;
+      font-weight: 600;
+      transition: all 0.25s ease;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: none;
+      cursor: pointer;
+      flex: 1;
+      justify-content: center;
     }
 
-    .btn-sedo:hover, .btn-afternic:hover {
+    .btn-sedo:hover,
+    .btn-afternic:hover {
       transform: translateY(-2px);
       filter: brightness(1.1);
     }
@@ -259,7 +309,7 @@
     /* ADVANTAGE */
     .advantage-grid {
       display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
       gap: 24px;
       margin-top: 20px;
     }
@@ -313,9 +363,21 @@
     }
 
     @media (max-width: 640px) {
-      .domain-card { padding: 26px 22px; }
-      .card-buttons { flex-direction: column; }
-      .btn-sm { width: 100%; justify-content: center; }
+      .domain-card {
+        padding: 26px 22px;
+        align-items: center;
+        text-align: center;
+      }
+      .card-buttons {
+        flex-direction: column;
+      }
+      .btn-sm {
+        width: 100%;
+        justify-content: center;
+      }
+      .domain-logo {
+        max-width: 160px;
+      }
     }
   </style>
 </head>
@@ -327,8 +389,128 @@
       <div class="badge">Premium Domain Portfolio</div>
       <h1>The <span class="accent">Silicon</span> Suite</h1>
       <p class="tagline">
-        Three premium domains built for the next era of compute and intelligence.<br>
+        Three premium domains built for the next era of compute and intelligence.<br />
         <strong>SiliconOptima</strong> optimizes. <strong>SiliconOmni</strong> powers. <strong>SiliconFold</strong> unfolds.
       </p>
       <div class="hero-cta">
         <a href="#domains" class="btn btn-primary">View Domains</a>
+        <a href="#package" class="btn btn-outline">Package Deal</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DOMAINS -->
+  <section id="domains">
+    <div class="container">
+      <h2 class="section-title">The Trinity</h2>
+      <p class="section-sub">Three premium .com domains — each a pillar of next-generation technology.</p>
+
+      <div class="domains">
+
+        <!-- SILICONOPTIMA -->
+        <div class="domain-card">
+          <img src="images/siliconoptima.png" alt="SiliconOptima Logo" class="domain-logo" loading="lazy" />
+          <div class="domain-number">01</div>
+          <div class="domain-name">silicon<span>optima</span>.com</div>
+          <div class="domain-tagline">Optimizing the Efficiency of Next-Gen Compute</div>
+          <p class="domain-desc">
+            Perfect for AI hardware, chip design, and high-performance computing.<br /><br />
+            <strong>Keywords:</strong> Semiconductor, Processor Design, HPC, AI Accelerators, Edge AI, Quantum Computing.
+          </p>
+          <div class="price">$1,995 <span>Buy Now</span></div>
+          <div class="card-buttons">
+            <a href="https://sedo.com/search/details/?domain=siliconoptima.com" target="_blank" class="btn-sedo">Sedo</a>
+            <a href="https://www.afternic.com/domain/siliconoptima.com" target="_blank" class="btn-afternic">Afternic</a>
+          </div>
+        </div>
+
+        <!-- SILICONOMNI -->
+        <div class="domain-card">
+          <img src="images/siliconomni.png" alt="SiliconOmni Logo" class="domain-logo" loading="lazy" />
+          <div class="domain-number">02</div>
+          <div class="domain-name">silicon<span>omni</span>.com</div>
+          <div class="domain-tagline">Powering Every Dimension of Intelligence</div>
+          <p class="domain-desc">
+            Ideal for AI platforms, cloud computing, and universal tech ecosystems.<br /><br />
+            <strong>Keywords:</strong> AI Platform, Cloud Computing, IoT, Full-Stack AI, Enterprise AI, Data Science.
+          </p>
+          <div class="price">$1,995 <span>Buy Now</span></div>
+          <div class="card-buttons">
+            <a href="https://sedo.com/search/details/?domain=siliconomni.com" target="_blank" class="btn-sedo">Sedo</a>
+            <a href="https://www.afternic.com/domain/siliconomni.com" target="_blank" class="btn-afternic">Afternic</a>
+          </div>
+        </div>
+
+        <!-- SILICONFOLD -->
+        <div class="domain-card">
+          <img src="images/siliconfold.png" alt="SiliconFold Logo" class="domain-logo" loading="lazy" />
+          <div class="domain-number">03</div>
+          <div class="domain-name">silicon<span>fold</span>.com</div>
+          <div class="domain-tagline">Unfolding the Future of Molecular Intelligence</div>
+          <p class="domain-desc">
+            Built for biotech, drug discovery, protein folding, and computational biology.<br /><br />
+            <strong>Keywords:</strong> Protein Folding, Biotech, Drug Discovery, AlphaFold, DeepMind, Computational Biology.
+          </p>
+          <div class="price">$2,995 <span>Buy Now</span></div>
+          <div class="card-buttons">
+            <a href="https://sedo.com/search/details/?domain=siliconfold.com" target="_blank" class="btn-sedo">Sedo</a>
+            <a href="https://www.afternic.com/domain/siliconfold.com" target="_blank" class="btn-afternic">Afternic</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ADVANTAGES -->
+  <section>
+    <div class="container">
+      <h2 class="section-title">Why This Suite?</h2>
+      <p class="section-sub">Three domains, one ecosystem — ready for the future of compute and intelligence.</p>
+      <div class="advantage-grid">
+        <div class="adv-card">
+          <h3>🧠 Domain</h3>
+          <p>Each domain is short, memorable, and built for a specific pillar of deep tech.</p>
+        </div>
+        <div class="adv-card">
+          <h3>⚡ Premium .com</h3>
+          <p>.com is the gold standard — these domains carry weight and trust globally.</p>
+        </div>
+        <div class="adv-card">
+          <h3>🚀 Ready to Scale</h3>
+          <p>Perfect for AI, biotech, semiconductors, and next-gen hardware ventures.</p>
+        </div>
+        <div class="adv-card">
+          <h3>💰 Investment Grade</h3>
+          <p>A rare set of aligned premium domains — ideal for portfolio diversification.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PACKAGE CTA -->
+  <section id="package">
+    <div class="container">
+      <div class="cta-box">
+        <h2>The Full Suite</h2>
+        <p>Interested in the complete <strong>Silicon Trinity</strong> package? Contact us directly for a bundled deal.</p>
+        <a href="mailto:your-email@example.com?subject=Silicon%20Suite%20Inquiry&body=I'm%20interested%20in%20the%20full%20Silicon%20Trinity%20package%20(siliconoptima.com%20%2B%20siliconomni.com%20%2B%20siliconfold.com).%20Please%20send%20me%20the%20package%20pricing." class="btn btn-primary">📩 Contact for Package</a>
+        <p style="margin-top: 18px; font-size: 0.85rem; color: var(--muted);">
+          Package price: <strong style="color: var(--text);">$6,495</strong> (instead of $6,985 individually)
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="container">
+      <p>&copy; 2026 The Silicon Suite. All rights reserved.</p>
+      <p style="margin-top: 4px; font-size: 0.75rem;">
+        This site is for informational purposes. Domains are listed on Sedo and Afternic.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
